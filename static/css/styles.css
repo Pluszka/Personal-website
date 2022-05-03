@@ -63,33 +63,5 @@ body {
 
 
 #programming .circle {
-    margin-top: 10%
-}
-
-#programming h1 {
-    font-family: 'Ubuntu';
-}
-
-/*art section*/
-
-#art {
-    color: white;
-    height: 100%;
-    margin: 2%;
-    padding: 2%;
-}
-
-.art_header {
-    padding: 5%;
-}
-
-/* footer */
-
-footer {
-    padding: 0.2rem;
-    text-align: center;
-}
-
-.icon {
-    height: 1.5rem;
+    margin: 2% 1%;
 }
