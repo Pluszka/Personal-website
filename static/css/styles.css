@@ -1,0 +1,67 @@
+/*whole body*/
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.yellow_background {
+    background-color: #FEE64C;
+}
+
+
+.black_background {
+    background-color: black;
+    color: #FEE64C;
+}
+
+.circle {
+    border-radius: 15px;
+}
+
+/*title*/
+#my_name {
+    text-align: center;
+    padding: 15% 5%;
+    font-family: 'Ubuntu';
+    z-index: 1;
+    position: relative;
+}
+#my_name h1 {
+    font-size: 4rem;
+}
+
+#star {
+    width: 70%;
+    transform: rotate(20deg);
+    color: white;
+    position: absolute;
+    z-index: 0;
+    top: 12%;
+    left: 0;
+}
+
+/* about */
+
+#about .black_background {
+    border-radius: 15px 50px;
+}
+
+.second-section {
+    padding: 4%;
+}
+
+.row {
+    max-width: 100%;
+    font-family: 'PT Sans Narrow';
+}
+
+/* programming */
+#programming {
+    text-align: center;
+    margin: 10% 2%;
+}
+
+
+#programming .circle {
+    margin: 2% 1%;
+}
