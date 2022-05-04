@@ -43,9 +43,10 @@
 
             <div id="my_name">
                 <h1>Karolina Koza</h1>
-                <h3>Programmer</h3>
-                <h3>&</h3>
-                <h3>Artist</h3>
+<!--                <h3>Programmer</h3>-->
+<!--                <h3>&</h3>-->
+<!--                <h3>Artist</h3>-->
+                {% block main_desc %}{% endblock %}
             </div>
             <figure>
                 <img id="star" src="{{ url_for('static', filename='images/plant.png') }}">
@@ -55,44 +56,66 @@
         <section id="about">
             <div class="row">
                 <div class="col-lg-4 second-section ">
-                    <h2>About me</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>
+<!--                    <h2>About me</h2>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>-->
+
+                {% block about-me %}{% endblock %}
                 </div>
                 <div class="col-lg-4 black_background second-section">
-                    <h2>Contact</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>
+<!--                    <h2>Contact</h2>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>-->
+
+                {% block contact %}{% endblock %}
                 </div>
                 <div class="col-lg-4 second-section">
-                    <h2>Soft Skills</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>
+<!--                    <h2>Soft Skills</h2>-->
+<!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>-->
+
+                {% block soft_skills %}{% endblock %}
                 </div>
             </div>
         </section>
         <section id="programming">
-            <h1>My programming skills</h1>
+<!--            <h1>My programming skills</h1>-->
+
+            {% block prog %}{% endblock %}
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="second-section black_background circle">
                         <h1>Python</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>
+
+                {% block python %}{% endblock %}
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="second-section black_background circle">
                         <h1>HTML</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>
+
+                    {% block html %}{% endblock %}
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="second-section black_background circle">
                         <h1>CSS</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
+
+                {% block css %}{% endblock %}
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="second-section black_background circle">
                         <h1>SQL</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
+
+                {% block sql %}{% endblock %}
+                    </div>
+                </div>
+                <div class="tools">
+                    <div class="second-section black_background circle">
+<!--                        <h1>Other tools</h1>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
+
+                        {% block tools %}{% endblock %}
                     </div>
                 </div>
             </div>
@@ -103,8 +126,10 @@
                 <div class="col-lg-2"></div>
                 <div class="col-lg-4 col-md-12">
                     <div id="my_art">
-                        <h3>My art journey</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>
+<!--                        <h3>My art journey</h3>-->
+<!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
+
+                        {% block art_desc %}{% endblock %}
                     </div>
                 </div>
                 <div class="col-lg-2"></div>
@@ -147,16 +172,22 @@
     </body>
     <footer class="yellow_background">
         <div class="row">
-            <figure>
-                <img class='icon' src="{{ url_for('static', filename='images/github-brands.svg') }}">
-            </figure>
-            <a href="https://github.com/Pluszka">GitHub</a>
-            <figure>
-                <img class='icon' src="{{ url_for('static', filename='images/linkedin-brands.svg') }}">
-            </figure>
-            <a href="https://www.linkedin.com/in/karolina-koza-007b92234/">Linkedin</a>
+            <div class="link">
+                <a href="https://github.com/Pluszka">
+                    <figure>
+                        <img class='icon' src="{{ url_for('static', filename='images/github-brands.svg') }}">
+                    </figure>
+                </a>
+            </div>
+            <div class="link">
+                <a href="https://www.linkedin.com/in/karolina-koza-007b92234/">
+                    <figure>
+                        <img class='icon' src="{{ url_for('static', filename='images/linkedin-brands.svg') }}">
+                    </figure>
+                </a>
+            </div>
         </div>
-        <div>
+        <div class="row">
             &copy;2022 Karolina Koza
         </div>
     </footer>
