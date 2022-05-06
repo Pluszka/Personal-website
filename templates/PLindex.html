@@ -1,7 +1,73 @@
 {% extends 'base.html' %}
 
+    {% block Navprog %}
+    <p>Programowanie</p>
+    {% endblock %}
+
+    {% block Navart %}
+    <p>Zainteresowania</p>
+    {% endblock %}
+
     {% block mainDesc %}
     <h3>Programista</h3>
     <h3>&</h3>
     <h3>Rysownik</h3>
+    {% endblock %}
+    {% block aboutMe %}
+    <h3>O mnie</h3>
+    <p>Jestem świeżo upieczoną absolwentką II Liceum Ogólnokształcącego im Adama Mickiewicza w Raciborzu.</p>
+    <p>W bieżącym roku zamierzam zacząc studia informatyczne.</p>
+    <hr>
+    {% endblock %}
+    {% block contact %}
+    <h3>Kontakt</h3>
+    <h5>Email:</h5><p>pluuszka@gmail.com</p>
+    <h5>Telefon:</h5><p>698 069 580</p>
+    <h5>LinkedIn:</h5><a href="https://www.linkedin.com/in/karolina-koza-007b92234/">Kliknij!</a>
+    <h5>GitHub:</h5><a href="https://github.com/Pluszka">Kliknij!</a>
+    {% endblock %}
+    {% block softSkills %}
+    <h3>Umiejętkości miękkie</h3>
+    <ul>
+      <li>Pracowita i ambitna</li>
+      <li>Komunikatywna</li>
+      <li>Myśląca nieszablono i kreatywna</li>
+      <li>Dobrze odnajdująca się w pracy w zespole</li>
+      <li>Opanowana i dobrze radząca sobie z presją czasu</li>
+    </ul>
+    <hr>
+    <h3>Języki</h3>
+    <ul>
+      <li>Angielski B2</li>
+      <li>Niemiecki A2</li>
+      <li>Francuski A1</li>
+    </ul>
+    {% endblock %}
+    {% block prog %}
+    <h2>Moje umiejętności programistyczne</h2>
+    {% endblock %}
+    {% block python %}
+<!--    <p>PyScript</p>-->
+    <p>Programowanie obiektowe, API, Flask, SQLAlchemy, Selenium, Webscraping/beautifull soup 4</p>
+    {% endblock %}
+
+    {% block css %}
+    <p>Bootstrap</p>
+    {% endblock %}
+
+    {% block progTitle %}
+    <h1>Inne narzędzia</h1>
+    {% endblock %}
+
+    {% block tools %}
+    <p>Git&GitHub</p>
+    {% endblock %}
+
+    {% block art %}
+    <h1 class="art_header"> Moje zainteresowania </h1>
+    {% endblock %}
+
+    {% block artDesc %}
+    <p>Zajmuję się malarstwem, rysunkiem tradycyjnym oraz cyfrowym. Jest to jedno z moich zainteresowań zaraz obok conwordingu, fantastyki oraz gier fabularnych. Zamierzam w przyszłości publikować swój własny komiks. Oto parę przykładów moich rysunków.</p>
+    <p>Uwielbiam również wędrówki górkie oraz w tym roku mam zamiar zacząć trenować szermierkę.</p>
     {% endblock %}

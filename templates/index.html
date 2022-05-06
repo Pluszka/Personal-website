@@ -1,7 +1,73 @@
 {% extends 'base.html' %}
 
+    {% block Navprog %}
+    <p>Programming</p>
+    {% endblock %}
+
+    {% block Navart %}
+    <p>Hobbies</p>
+    {% endblock %}
+
     {% block mainDesc %}
     <h3>Programmer</h3>
     <h3>&</h3>
     <h3>Artist</h3>
+    {% endblock %}
+    {% block aboutMe %}
+    <h3>About Me</h3>
+    <p> I just graduated high school ( II Liceum Ogólnokształcącego im Adama Mickiewicza at Raciborz)</p>
+    <p>This year I will start university and learning there about Computer Science.</p>
+    <hr>
+    {% endblock %}
+    {% block contact %}
+    <h3>Contact</h3>
+    <h5>Email:</h5><p>pluuszka@gmail.com</p>
+    <h5>Phone:</h5><p>698 069 580</p>
+    <h5>LinkedIn:</h5><a href="https://www.linkedin.com/in/karolina-koza-007b92234/">Click here!</a>
+    <h5>GitHub:</h5><a href="https://github.com/Pluszka">Clicke here!</a>
+    {% endblock %}
+    {% block softSkills %}
+    <h3>Soft skills</h3>
+    <ul>
+      <li>Hard-working and ambitious</li>
+      <li>Communicative</li>
+      <li>Thinking outside the boxes and creative</li>
+      <li>Excellent at teamwork</li>
+      <li> Cool-headed and good dealing with working under the pressure of time </li>
+    </ul>
+    <hr>
+    <h3>Languages</h3>
+    <ul>
+      <li>English B2</li>
+      <li>German A2</li>
+      <li>French A1</li>
+    </ul>
+    {% endblock %}
+    {% block prog %}
+    <h2>Programming skills</h2>
+    {% endblock %}
+    {% block python %}
+<!--    <p>PyScript</p>-->
+    <p>OOP, API, Flask, SQLAlchemy, Selenium, Webscraping/beautifull soup 4</p>
+    {% endblock %}
+
+    {% block css %}
+    <p>Bootstrap</p>
+    {% endblock %}
+
+    {% block progTitle %}
+    <h1>Other tools</h1>
+    {% endblock %}
+
+    {% block tools %}
+    <p>Git&GitHub</p>
+    {% endblock %}
+
+    {% block art %}
+    <h1 class="art_header"> My hobbies </h1>
+    {% endblock %}
+
+    {% block artDesc %}
+    <p>I make painting, sketches and digital art. I's one of the hobbies of mine as conwording, fantasy and RPGs. I'm going to creating comic book in the future. There are few examples of my artworks.</p>
+    <p>I'm also carzy about hiking and this year I'm going to start learning swordsmanship.</p>
     {% endblock %}

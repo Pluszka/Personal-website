@@ -1,46 +1,20 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
-
-@Pluszka
-Pluszka
-/
-Personal-website
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Personal-website/static/css/styles.css
-@Pluszka
-Pluszka footer left
-Latest commit 4507395 30 minutes ago
- History
- 1 contributor
-98 lines (78 sloc)  1.13 KB
-
 /*whole body*/
+li {
+    text-align: left;
+}
+
 body {
     text-align: center;
     padding: 0;
     margin: 0;
 }
 .yellow_background {
-    background-color: #FEE64C;
+    background-color: #edd54e;
 }
-
 
 .black_background {
     background-color: black;
-    color: #FEE64C;
+    color: #edd54e;
 }
 
 .circle {
@@ -81,27 +55,42 @@ body {
 
 .row {
     max-width: 100%;
-    font-family: 'PT Sans Narrow';
+    font-family: 'Titillium Web';
 }
 
 /* programming */
+
+#first-prog {
+    margin-top: 10%;
+}
+
+.flex {
+    display: flex;
+    flex-direction: col;
+    align-items: center;
+    gap: 0.5rem 3rem;
+}
+
+.prog-row {
+     display: inline-flex;
+     flex-direction: row;
+     flex-grow: 1;
+}
+
 #programming {
     text-align: center;
     margin: 10% 2%;
 }
 
-
 #programming .circle {
-    margin-top: 10%
+    width:50%;
 }
 
 #programming h1 {
     font-family: 'Ubuntu';
 }
 
-#programming .tools .circle {
-    margin-top: 5%
-}
+
 
 /*art section*/
 

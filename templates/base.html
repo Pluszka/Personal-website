@@ -12,7 +12,7 @@
             <!--- google fonts --->
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&family=Inconsolata:wght@700&family=Oswald:wght@600&family=PT+Sans+Narrow&family=Tomorrow:ital,wght@1,600&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
             <!--favicon-->
             <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
         </head>
@@ -30,10 +30,10 @@
                             <a class="nav-link" href="{{ url_for('home', language='pl') }}">PL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#programming">Programming</a>
+                            <a class="nav-link" href="#programming">{% block Navprog %}{% endblock %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#my_art">Artworks</a>
+                            <a class="nav-link" href="#my_art">{% block Navart %}{% endblock %}</a>
                         </li>
                     </ul>
                 </div>
@@ -77,51 +77,60 @@
             </section>
             <section id="programming">
     <!--            <h1>My programming skills</h1>-->
-
                 {% block prog %}{% endblock %}
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="second-section black_background circle">
+                <div class="flex" id="first-prog">
+                    <div class="second-section black_background circle">
+                        <div class="prog-row">
                             <h1>Python</h1>
-
-                    {% block python %}{% endblock %}
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="second-section black_background circle">
-                            <h1>HTML</h1>
-
+                    <div class="prog-row">
+                        {% block python %}{% endblock %}
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="prog-row">
                         {% block html %}{% endblock %}
+                    </div>
+                    <div class="second-section black_background circle">
+                        <div class="prog-row">
+                            <h1>Html</h1>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="second-section black_background circle">
+                </div>
+                <div class="flex">
+                    <div class="second-section black_background circle">
+                        <div class="prog-row">
                             <h1>CSS</h1>
-    <!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
-
-                    {% block css %}{% endblock %}
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="second-section black_background circle">
+                    <div class="prog-row">
+                        {% block css %}{% endblock %}
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="prog-row">
+                        {% block sql %}{% endblock %}
+                    </div>
+                    <div class="second-section black_background circle">
+                        <div class="prog-row">
                             <h1>SQL</h1>
-    <!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
-
-                    {% block sql %}{% endblock %}
                         </div>
                     </div>
-                    <div class="tools">
-                        <div class="second-section black_background circle">
-    <!--                        <h1>Other tools</h1>-->
-    <!--                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas luctus turpis pharetra metus interdum tincidunt eget sit amet lorem. Donec sed pulvinar sem. Pellentesque at laoreet felis, placerat placerat massa. Fusce euismod a enim nec dictum. Sed rhoncus ornare risus, sed varius dolor consequat vel. Ut malesuada porta tellus. Vestibulum dapibus tortor sit amet finibus rutrum. Suspendisse nec placerat massa.</p>-->
-
-                            {% block tools %}{% endblock %}
+                </div>
+                <div class="flex">
+                    <div class="second-section black_background circle">
+                        <div class="prog-row">
+                            {% block progTitle %}{% endblock %}
                         </div>
+                    </div>
+                    <div class="prog-row">
+                        {% block tools %}{% endblock %}
                     </div>
                 </div>
             </section>
             <section id="art" class="black_background">
-                <h1 class="art_header"> My artworks</h1>
+                {% block art %}{% endblock %}
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-4 col-md-12">
