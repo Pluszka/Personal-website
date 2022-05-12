@@ -68,6 +68,7 @@ body {
     display: flex;
     flex-direction: col;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem 3rem;
 }
 
@@ -90,7 +91,11 @@ body {
     font-family: 'Ubuntu';
 }
 
-
+#programming p {
+    font-size: 1.2rem;
+    text-align:justify;
+    font-style: italic;
+}
 
 /*art section*/
 
