@@ -16,8 +16,8 @@
             <!--favicon-->
             <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
         </head>
-        <body></body>
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top yellow_background">
+        <body class="blue">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top peach">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -39,7 +39,7 @@
                 </div>
             </nav>
 
-            <section id="title" class="yellow_background">
+            <section id="title" class="peach">
 
                 <div id="my_name">
                     <h1>Karolina Koza</h1>
@@ -61,7 +61,7 @@
 
                     {% block aboutMe %}{% endblock %}
                     </div>
-                    <div class="col-lg-4 special-border black_background second-section">
+                    <div class="col-lg-4 special-border black second-section">
     <!--                    <h2>Contact</h2>-->
     <!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>-->
 
@@ -79,39 +79,39 @@
     <!--            <h1>My programming skills</h1>-->
                 {% block prog %}{% endblock %}
                 <div class="grid-container">
-                    <div class="second-section black_background prog-title">
+                    <div class="second-section black prog-title">
                         <h1>Python</h1>
                     </div>
-                    <div class="second-section yellow_background prog-desc">
+                    <div class="second-section purple prog-desc">
                         {% block python %}{% endblock %}
                     </div>
-                    <div class="second-section black_background prog-title">
+                    <div class="second-section black prog-title">
                         <h1>Html</h1>
                     </div>
-                    <div class="second-section yellow_background prog-desc">
+                    <div class="second-section purple prog-desc">
                         {% block html %}{% endblock %}
                     </div>
-                    <div class="second-section black_background prog-title">
+                    <div class="second-section black prog-title">
                         <h1>CSS</h1>
                     </div>
-                    <div class="second-section yellow_background prog-desc">
+                    <div class="second-section purple prog-desc">
                         {% block css %}{% endblock %}
                     </div>
-                    <div class="second-section black_background prog-title">
+                    <div class="second-section black prog-title">
                         <h1>SQL</h1>
                     </div>
-                    <div class="second-section yellow_background prog-desc">
+                    <div class="second-section purple prog-desc">
                         {% block sql %}{% endblock %}
                     </div>
-                    <div class="second-section black_background prog-title">
+                    <div class="second-section black prog-title">
                        {% block progTitle %}{% endblock %}
                     </div>
-                    <div class="second-section yellow_background prog-desc">
+                    <div class="second-section purple prog-desc">
                         {% block tools %}{% endblock %}
                     </div>
                 </div>
             </section>
-            <section id="art" class="black_background">
+            <section id="art" class="purple">
                 {% block art %}{% endblock %}
                 <div class="row">
                     <div class="col-lg-2"></div>
@@ -161,7 +161,7 @@
                 </div>
             </section>
         </body>
-        <footer class="yellow_background">
+        <footer class="peach">
             <div class="row">
                 <div class="link">
                     <a href="https://github.com/Pluszka">
