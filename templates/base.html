@@ -16,7 +16,7 @@
             <!--favicon-->
             <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
         </head>
-        <body>
+        <body></body>
             <nav class="navbar navbar-expand-lg navbar-light sticky-top yellow_background">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,7 @@
 
                     {% block aboutMe %}{% endblock %}
                     </div>
-                    <div class="col-lg-4 black_background second-section">
+                    <div class="col-lg-4 special-border black_background second-section">
     <!--                    <h2>Contact</h2>-->
     <!--                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus massa ante, nec tristique ante maximus eget. Mauris felis arcu, ullamcorper ut cursus sit amet, vulputate quis mauris. Suspendisse sit amet porta justo. Nam ac volutpat felis. Donec dapibus leo magna, nec tristique ex iaculis in. Sed dignissim nulla ut lacus fringilla, non mattis quam finibus. Vivamus efficitur eu libero malesuada mattis. Donec non ipsum ut urna facilisis maximus. Morbi blandit lobortis ultricies. Sed hendrerit id turpis semper accumsan. Proin id lacinia tortor. Nulla bibendum posuere velit, varius fringilla ipsum maximus vitae.</p>-->
 
@@ -78,53 +78,35 @@
             <section id="programming">
     <!--            <h1>My programming skills</h1>-->
                 {% block prog %}{% endblock %}
-                <div class="flex" id="first-prog">
-                    <div class="second-section black_background circle">
-                        <div class="prog-row">
-                            <h1>Python</h1>
-                        </div>
+                <div class="grid-container">
+                    <div class="second-section black_background prog-title">
+                        <h1>Python</h1>
                     </div>
-                    <div class="prog-row">
+                    <div class="second-section yellow_background prog-desc">
                         {% block python %}{% endblock %}
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="prog-row">
+                    <div class="second-section black_background prog-title">
+                        <h1>Html</h1>
+                    </div>
+                    <div class="second-section yellow_background prog-desc">
                         {% block html %}{% endblock %}
                     </div>
-                    <div class="second-section black_background circle">
-                        <div class="prog-row">
-                            <h1>Html</h1>
-                        </div>
+                    <div class="second-section black_background prog-title">
+                        <h1>CSS</h1>
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="second-section black_background circle">
-                        <div class="prog-row">
-                            <h1>CSS</h1>
-                        </div>
-                    </div>
-                    <div class="prog-row">
+                    <div class="second-section yellow_background prog-desc">
                         {% block css %}{% endblock %}
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="prog-row">
+                    <div class="second-section black_background prog-title">
+                        <h1>SQL</h1>
+                    </div>
+                    <div class="second-section yellow_background prog-desc">
                         {% block sql %}{% endblock %}
                     </div>
-                    <div class="second-section black_background circle">
-                        <div class="prog-row">
-                            <h1>SQL</h1>
-                        </div>
+                    <div class="second-section black_background prog-title">
+                       {% block progTitle %}{% endblock %}
                     </div>
-                </div>
-                <div class="flex">
-                    <div class="second-section black_background circle">
-                        <div class="prog-row">
-                            {% block progTitle %}{% endblock %}
-                        </div>
-                    </div>
-                    <div class="prog-row">
+                    <div class="second-section yellow_background prog-desc">
                         {% block tools %}{% endblock %}
                     </div>
                 </div>

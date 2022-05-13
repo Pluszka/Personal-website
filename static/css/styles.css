@@ -1,4 +1,9 @@
 /*whole body*/
+
+.special-border{
+    border-radius: 15px 50px;
+}
+
 li {
     text-align: left;
 }
@@ -15,10 +20,6 @@ body {
 .black_background {
     background-color: black;
     color: #edd54e;
-}
-
-.circle {
-    border-radius: 15px;
 }
 
 /*title*/
@@ -45,10 +46,6 @@ body {
 
 /* about */
 
-#about .black_background {
-    border-radius: 15px 50px;
-}
-
 .second-section {
     padding: 4%;
 }
@@ -60,43 +57,39 @@ body {
 
 /* programming */
 
-#first-prog {
-    margin-top: 10%;
-}
 
-.flex {
-    display: flex;
-    flex-direction: col;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem 3rem;
-}
-
-.prog-row {
-     display: inline-flex;
-     flex-direction: row;
-     flex-grow: 1;
+.grid-container {
+    margin: 2% 5% 15%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 4%;
 }
 
 #programming {
-    text-align: center;
-    margin: 10% 2%;
-}
-
-#programming .circle {
-    width:50%;
+    margin-top: 8%;
+    font-size: 32rem;
 }
 
 #programming h1 {
     font-family: 'Ubuntu';
+    padding: 2%;
+    font-size 33rem;
 }
 
 #programming p {
-    font-size: 1.2rem;
-    text-align:justify;
+    font-size: 1.4rem;
     font-style: italic;
 }
 
+.prog-title {
+    border-radius: 50px 0 0 15px;
+}
+
+.prog-desc {
+    text-align: left;
+    border-radius: 0 15px 50px 0;
+}
 /*art section*/
 
 #art {
