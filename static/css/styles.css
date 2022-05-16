@@ -82,23 +82,26 @@ body {
 }
 
 #programming {
+    font-family: 'Ubuntu';
     margin-top: 8%;
-    font-size: 32rem;
 }
 
 #programming h1 {
-    font-family: 'Ubuntu';
     padding: 2%;
-    font-size 33rem;
+    font-size: 4rem;
 }
 
+
 #programming p {
+    font-family: 'Titillium Web';
     font-size: 1.4rem;
     font-style: italic;
 }
 
 .prog-title {
     border-radius: 50px 0 0 15px;
+    text-align: center;
+    padding: 10%;
 }
 
 .prog-desc {
