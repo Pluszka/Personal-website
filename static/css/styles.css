@@ -64,6 +64,12 @@ body {
     margin: 2% 5%;
 }
 
+#about .black {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 #about h5 {
     margin: 2% 5%;
 }
