@@ -30,7 +30,6 @@ li {
 
 body {
     margin: 0 auto;
-    max-width: 750px;
     padding: 2rem;
     border-radius: 6px;
     overflow-x: hidden;
@@ -68,7 +67,7 @@ body {
 /* about */
 
 #about {
-    margin: 2% 5%;
+    margin: 2%;
 }
 
 #about .black {
@@ -86,7 +85,6 @@ body {
 }
 
 .row {
-    max-width: 100%;
     font-family: 'Titillium Web';
 }
 
@@ -166,6 +164,10 @@ footer .row {
 
 @media all and (max-width:800px)
 {
+    #about black {
+        text-align: center;
+    }
+
     #about h3 {
         font-size: 3rem;
     }
@@ -181,4 +183,5 @@ footer .row {
     #programming {
         margin-bottom: 30%;
     }
+
 }
