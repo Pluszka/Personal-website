@@ -99,6 +99,12 @@ body {
 }
 
 #programming h1 {
+    margin: 0 auto;
+    max-width: 750px;
+    border-radius: 6px;
+    overflow-x: hidden;
+    word-break: break-word;
+    overflow-wrap: break-word;
     padding: 2%;
     font-size: 4rem;
 }
@@ -155,4 +161,20 @@ footer .row {
 
 .link {
     margin: 1% 5%;
+}
+
+@media all and (max-width:800px)
+{
+    #about h3 {
+        font-size: 3rem;
+    }
+
+    #about h5 {
+        font-size: 2rem;
+    }
+
+    #about p, a, li{
+        font-size: 1.5rem;
+    }
+
 }
