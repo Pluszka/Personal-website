@@ -42,6 +42,10 @@ body {
     margin: 0;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
 /*title*/
 #my_name {
     text-align: center;
@@ -49,9 +53,6 @@ body {
     font-family: 'Ubuntu';
     z-index: 1;
     position: relative;
-}
-#my_name h1 {
-    font-size: 4rem;
 }
 
 #star {
@@ -105,7 +106,6 @@ body {
 
 #programming h1 {
     padding: 2%;
-    font-size: 4rem;
 }
 
 
